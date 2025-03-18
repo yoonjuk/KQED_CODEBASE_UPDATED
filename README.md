@@ -13,8 +13,9 @@ This repository contains scripts for processing and evaluating podcast data as p
 ## Quick Start
 
 1. Clone the repository:
+
+   ```
    git clone https://github.com/your-username/KQED_Codebase.git
    cd KQED_Codebase
-   ```
 
    ```

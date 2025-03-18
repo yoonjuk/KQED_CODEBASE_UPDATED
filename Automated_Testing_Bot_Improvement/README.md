@@ -18,13 +18,17 @@ This folder contains scripts to process podcast transcripts into metadata-rich c
 ### Step 2: Run the Chunking Script
 
 1. Run final_chunk_one.py to process the transcripts into 500-word chunks:
+   ```
    python3 final_chunk_one.py
+   ```
 2. This will generate individual JSONL files containing chunks for each episode of the podcast.
 
 ### Step 3: Combine JSONL Files
 
 1. Run combine_episode.py to merge the JSONL files for all episodes of a podcast into a single JSONL file:
-   ython3 combine_episode.py --input_dir path/to/chunked_files --output_dir path/to/combined_files
+   ```
+   python3 combine_episode.py --input_dir path/to/chunked_files --output_dir path/to/combined_files
+   ```
 2. The combined JSONL file will include all the episode chunks in one file, formatted for WikiChat upload.
 
 ### Step 4(optional): Split JSONL File
